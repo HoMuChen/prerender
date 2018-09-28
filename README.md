@@ -409,6 +409,14 @@ When using this parameter and `window.prerenderData`, the response from Prerende
 
 If you don't set `window.prerenderData`, the response won't be JSON. The response will just be the normal HTML.
 
+#### waitForSelector
+
+By default, we will return html till there's no requests in fight. However, we can return earlier when some DOM elements is ready. 
+
+```
+http://localhost:3000/render?waitForSelector=cssSelector&url=https://www.example.com/
+```
+
 ### <a id='getvspost'></a>
 ### Get vs Post
 
